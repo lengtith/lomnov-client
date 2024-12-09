@@ -11,7 +11,7 @@ import { API_ENDPOINTS } from "@/libs/const/api-endpoints";
 // Fetch property data
 async function fetchProperty(id: string): Promise<RealEstateItem> {
   try {
-    // Increment view count
+
     // await axiosInstance.put(`${API_ENDPOINTS.PROPERTIES}/${id}/views`);
 
     const res = await axiosInstance.get(`${API_ENDPOINTS.GET_PROPERTY_BY_ID}/${id}`);
