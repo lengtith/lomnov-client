@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Modal from "react-modal";
+// import Modal from "react-modal";
 import { useSpring, animated } from "@react-spring/web";
 
 const ContactForm = ({ propertyUser }: { propertyUser: string }) => {
@@ -30,7 +30,7 @@ const ContactForm = ({ propertyUser }: { propertyUser: string }) => {
           Contact {propertyUser}
         </span>
       </button>
-      <Modal
+      {/* <Modal
         isOpen={isOpen}
         onRequestClose={closeModal}
         shouldCloseOnOverlayClick={true}
@@ -100,7 +100,7 @@ const ContactForm = ({ propertyUser }: { propertyUser: string }) => {
             </div>
           </form>
         </animated.div>
-      </Modal>
+      </Modal> */}
     </div>
   );
 };
