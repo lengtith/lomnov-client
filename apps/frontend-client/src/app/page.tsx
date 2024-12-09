@@ -56,9 +56,9 @@ const Home:React.FC = () => {
         </div>
       </section>
       {/* <ExclusiveHomesSlider /> */}
-      <section className=" xl:w-[1300px] m-auto h-[500px] b px-2 xl:px-0">
+      {/* <section className=" xl:w-[1300px] m-auto h-[500px] b px-2 xl:px-0">
         <Slider />
-      </section>
+      </section> */}
       <div className=" flex flex-col lg:flex-row justify-between gap-20 xl:w-[1300px] m-auto py-20 lg:py-40 px-2 lg:px-20">
         <div>
           <h2 className=" text-[28px] font-[600] text-olive-drab">
