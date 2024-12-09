@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["dom", "esnext"],
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
+    // "emitDeclarationOnly": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*",
+    // "../../apps/frontend-client/src/components/organisms/auth/form-login/LoginForm.tsx",
+    // "../../apps/frontend-client/src/components/organisms/auth/form-login/InputField.stories.tsx"
+  ]
+}

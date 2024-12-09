@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:storybook/recommended"
+  ]
+}
+
+// {
+//   "extends": [
+//     "next/core-web-vitals",
+//     "plugin:storybook/recommended"
+//   ],
+//   "plugins": [
+//     "prefer-arrow"
+//   ],
+//   "rules": {
+//     "prefer-arrow/prefer-arrow-functions": [
+//       "error",
+//       {
+//         "disallowPrototype": true,
+//         "singleReturnOnly": false,
+//         "classPropertiesAllowed": false
+//       }
+//     ],
+//     "func-style": ["error", "expression", { "allowArrowFunctions": true }]
+//   }
+// }
+
+
+

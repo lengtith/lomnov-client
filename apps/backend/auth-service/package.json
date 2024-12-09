@@ -1,0 +1,50 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "tsoa:gen": "tsoa spec && tsoa routes",
+    "dev": "yarn tsoa:gen && nodemon src/server.ts",
+    "build": "node build-script.js",
+    "start:local": "node ./build/server.js",
+    "start:pm2-production": "pm2 start ecosystem.config.js",
+    "start:pm2-local": "pm2 start ecosystem.local.config.js",
+    "stop:pm2": "pm2 stop auth-service",
+    "restart": "pm2 reload auth-service"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.621.0",
+    "@types/axios": "^0.14.0",
+    "@types/cookie-parser": "^1.4.7",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/jwt-decode": "^3.1.0",
+    "@types/mongoose": "^5.11.97",
+    "@types/swagger-ui-express": "^4.1.6",
+    "aws-jwt-verify": "^4.0.1",
+    "aws-sdk": "^2.1665.0",
+    "axios": "^1.7.5",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.23.0",
+    "esbuild-plugin-copy": "^2.1.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "joi": "^17.13.3",
+    "jwt-decode": "^4.0.0",
+    "mongoose": "^8.6.0",
+    "node-fetch": "^3.3.2",
+    "swagger-ui-express": "^5.0.1",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2",
+    "@types/node-fetch": "^2.6.11",
+    "nodemon": "^3.1.4",
+    "tsoa": "^6.4.0"
+  }
+}

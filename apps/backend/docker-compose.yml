@@ -1,0 +1,54 @@
+version: '3.9'   
+
+services:
+  api-getway:
+    container_name: api-getway
+    build:
+      context: ./api-getway
+      dockerfile: Dockerfile
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./api-getway:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+  auth-service:
+    container_name: auth-service
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    ports:
+      - "4001:4001"
+    volumes:
+      - ./auth-service:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+  
+  user-service:
+    container_name: user-service
+    build:
+      context: ./user-service
+      dockerfile: Dockerfile
+    ports:
+      - "4002:4002"
+    volumes:
+      - ./user-service:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+  
+  property-service:
+    container_name: property-service
+    build:
+      context: ./property-service
+      dockerfile: Dockerfile
+    ports:
+      - "4003:4003"
+    volumes:
+      - ./property-service:/app
+      - /app/node_modules
+    environment:
+      NODE_ENV: development
+

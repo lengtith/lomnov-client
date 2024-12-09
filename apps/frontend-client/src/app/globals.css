@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: #e0e0dc;
+  margin: 0;
+  padding: 0;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("/fonts/coolvetica/coolvetica rg.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/helvetica/Helvetica.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/helvetica/Helvetica Black Condensed.otf") format("opentype");
+  font-weight: 900; /* You can also use 'font-weight: black;' */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("/fonts/helvetica/Helvetica-Bold.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+/* components/ExclusiveHomesSlider.css */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d1d1d1;
+  opacity: 1;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+  box-shadow: 0 0 0 2px #d1d1d1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #6b6b6b;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+}
+
+.swiper-button-prev {
+  left: -10px;
+}
+
+.swiper-button-next {
+  right: -10px;
+}
+
+
