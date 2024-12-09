@@ -12,7 +12,7 @@ async function fetchProperties(): Promise<RealEstateItem[]> {
   return res.data.properties;
 }
 
-async function  Slider() {
+async function  Slider(): Promise<React.JSX.Element> {
   const item= await fetchProperties();
 
   return (
