@@ -10,7 +10,7 @@ import ItemCardNearlyLocationList from "@/components/molecules/item-card-nearly-
 import LocationAccess from "@/components/organisms/location-access/LocationAccess";
 
 
-export default function Home() {
+const Home:React.FC = () => {
   return (
     <main className="w-full">
       <HeroSection />
@@ -83,3 +83,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home;
