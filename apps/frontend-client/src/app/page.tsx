@@ -80,41 +80,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section></section>
-
-      {/* feed on sell */}
-      {/* <div className="flex flex-col gap-5 mb-10">
-          <div className="flex flex-row justify-between items-center">
-            <h1 className=" text-[18px] lg:text-[26px] font-[600] ">
-              Feed on sale
-            </h1>
-            <Link
-              href={"/buy"}
-              className="text-blue-500  lg:text-[18px] font-[500]"
-            >
-              View All
-            </Link>
-          </div>
-          <ItemCardList />
-        </div> */}
-      {/* Popular location */}
-      {/* feed on rent */}
-      {/* <div className="flex flex-col gap-5 mb-10">
-          <div className="flex flex-row justify-between items-center">
-            <h1 className=" text-[18px] lg:text-[26px] font-[600] ">
-              Feed on Rent
-            </h1>
-            <Link
-              href={"/buy"}
-              className="text-blue-500  lg:text-[18px] font-[500]"
-            >
-              View All
-            </Link>
-          </div>
-          <ItemCardList />
-        </div> */}
-      {/* our service */}
-      {/* <ServiceCardList /> */}
     </main>
   );
 }
