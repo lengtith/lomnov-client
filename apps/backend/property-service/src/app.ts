@@ -37,6 +37,10 @@ app.use(loggingMiddleware)
 RegisterRoutes(app)
 console.log("Error!");
 
+app.get('/', (_req, res) => {
+  res.status(200).json({ message: 'Properties, OK' });
+});
+
 // ========================
 // API Documentations
 // ========================
