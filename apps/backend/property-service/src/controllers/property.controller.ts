@@ -56,11 +56,6 @@ export class PropertyController extends Controller {
     @FormField() detail?: string,
     @Request() request?: Express.Request
   ): Promise<ResponseCreatePropertyDTO> {
-    console.log('Thumbnail:', thumbnail);  // Add a log to check if the file is received
-    console.log('Images:', images);        // Log images array
-    console.log('description:', description);        // Log images array
-    console.log('location:', location);        // Log images array
-    console.log("Price::", price);
 
     try {
 
@@ -280,7 +275,7 @@ export class PropertyController extends Controller {
     }
   }
 
-  //this method for post view user 
+  //this method for post view user
 
   @Put("/properties/{propertyId}/views")
   public async incrementPropertyViews(@Path() propertyId: string): Promise<ResponsePropertyDTO> {
@@ -395,7 +390,7 @@ export class PropertyController extends Controller {
   }
 
   /**
-   * This method use for responses only category 
+   * This method use for responses only category
    */
   @Get("/properties/category")
   public async getCategories() {
