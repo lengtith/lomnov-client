@@ -113,6 +113,24 @@ jobs:
             source /home/ubuntu/.nvm/nvm.sh
             source /home/ubuntu/.profile
 
+            # Ensure Node.js is installed
+            if ! command -v node &> /dev/null; then
+              echo "Node.js is not installed. Installing..."
+              nvm install node
+            fi
+
+            # Ensure Yarn is installed
+            if ! command -v yarn &> /dev/null; then
+              echo "Yarn is not installed. Installing..."
+              npm install -g yarn
+            fi
+
+            # Ensure PM2 is installed
+            if ! command -v pm2 &> /dev/null; then
+              echo "PM2 is not installed. Installing..."
+              yarn global add pm2
+            fi
+
             cd /home/ubuntu/apps/property-service/build
             yarn install --production
 
